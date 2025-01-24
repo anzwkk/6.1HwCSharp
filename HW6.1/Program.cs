@@ -125,3 +125,5 @@ hoursWorked = int.Parse(Console.ReadLine());
 Console.WriteLine("Введіть розмір годинної ставки:");
 hourRate = double.Parse(Console.ReadLine());
 
+dailyPay = hoursWorked * hourRate;
+Console.WriteLine($"Оплата за день: {dailyPay} грн");
