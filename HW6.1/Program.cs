@@ -64,7 +64,7 @@
 //}
 
 //Перевірка паролю: Напишіть програму, яка перевіряє пароль користувача. Пароль вважається прийнятним, якщо він містить принаймні 8 символів, з яких принаймні один символ - це цифра, а також принаймні один символ - це спеціальний символ (наприклад, !, @, # тощо).
-Console.WriteLine("Введіть пароль:");
+Console.WriteLine("Введіть пароль (має бути щонайменше 8 символів, хоча б одна цифра та один спеціальний символ):");
 string password = Console.ReadLine();
 
 bool isValidLength = password.Length >= 8;
@@ -82,4 +82,13 @@ foreach (char character in password)
     {
         containsNumber = true;
     }
+}
+
+if (isValidLength && containsNumber && containsSpecialCharacter)
+{
+    Console.WriteLine("Пароль вірний");
+}
+else
+{
+    Console.WriteLine("Пароль не відповідає вимогам");
 }
