@@ -35,5 +35,5 @@ for (int i = 1; i <= stringsNum; i++)
         Console.Write("*");
 
     }
- 
+    Console.WriteLine()
 }
