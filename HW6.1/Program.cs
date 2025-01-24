@@ -94,24 +94,34 @@
 //}
 
 //Генерація фібоначчівської послідовності: Напишіть програму, яка генерує перші N чисел Фібоначчі. Послідовність Фібоначчі починається з 0 і 1, а кожне наступне число є сумою двох попередніх чисел у послідовності.
-Console.WriteLine("Введіть кількість чисел Фібоначчі:");
-int num = int.Parse(Console.ReadLine());
-if (num <= 0)
-{
-    Console.WriteLine("Кількість чисел повинна бути більше 0");
-    return;
-}
+//Console.WriteLine("Введіть кількість чисел Фібоначчі:");
+//int num = int.Parse(Console.ReadLine());
+//if (num <= 0)
+//{
+//    Console.WriteLine("Кількість чисел повинна бути більше 0");
+//    return;
+//}
 
-int first = 0;
-int second = 1;
-Console.WriteLine("Послідовність Фібоначчі:");
+//int first = 0;
+//int second = 1;
+//Console.WriteLine("Послідовність Фібоначчі:");
 
-for (int i = 0; i < num; i++)
-{
-    Console.Write(first + " ");
-    int next = first + second;
-    first = second;
-    second = next;
-}
+//for (int i = 0; i < num; i++)
+//{
+//    Console.Write(first + " ");
+//    int next = first + second;
+//    first = second;
+//    second = next;
+//}
 
+//Калькулятор оплати праці за годину: Напишіть програму, яка запитує в користувача кількість годин, працюваних за день, та розмір годинної ставки. Після введення значень програма має обчислити та вивести оплату за день.
+int hoursWorked;
+double hourRate;
+double dailyPay;
+
+Console.WriteLine("Введіть кількість годин, працюваних за день:");
+hoursWorked = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Введіть розмір годинної ставки:");
+hourRate = double.Parse(Console.ReadLine());
 
