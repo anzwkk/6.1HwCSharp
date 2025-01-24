@@ -40,25 +40,46 @@
 
 //Генерація простих чисел: Напишіть програму, яка генерує прості числа від 1 до заданого користувачем числа. Просте число - це число, яке ділиться лише на 1 і на себе.
 
-Console.WriteLine("Введіть максимальне число:");
-int maxNum = int.Parse(Console.ReadLine());
+//Console.WriteLine("Введіть максимальне число:");
+//int maxNum = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"Прості числа від 1 до {maxNum}:");
+//Console.WriteLine($"Прості числа від 1 до {maxNum}:");
 
-for (int num = 2; num <= maxNum; num++)
+//for (int num = 2; num <= maxNum; num++)
+//{
+//    bool isPrime = true;
+//    for (int i = 2; i < num; i++)
+//    {
+//        if (num % i == 0)
+//        {
+//            isPrime = false;
+//            break;
+//        }
+//    }
+
+//    if (isPrime)
+//    {
+//        Console.Write(num + " ");
+//    }
+//}
+
+//Перевірка паролю: Напишіть програму, яка перевіряє пароль користувача. Пароль вважається прийнятним, якщо він містить принаймні 8 символів, з яких принаймні один символ - це цифра, а також принаймні один символ - це спеціальний символ (наприклад, !, @, # тощо).
+Console.WriteLine("Введіть пароль:");
+string password = Console.ReadLine();
+
+bool isValidLength = password.Length >= 8;
+bool containsNumber = false;
+bool containsSpecialCharacter = false;
+string specialCharacters = "!@#$%*&*)(,.?\"|<>";
+
+foreach (char character in password)
 {
-    bool isPrime = true;
-    for (int i = 2; i < num; i++)
+    if (specialCharacters.Contains(character))
     {
-        if (num % i == 0)
-        {
-            isPrime = false;
-            break;
-        }
+        containsSpecialCharacter = true;
     }
-
-    if (isPrime)
+    else if (char.IsDigit(character))
     {
-        Console.Write(num + " ");
+        containsNumber = true;
     }
 }
