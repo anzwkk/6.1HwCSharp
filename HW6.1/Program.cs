@@ -129,10 +129,25 @@
 //Console.WriteLine($"Оплата за день: {dailyPay} грн");
 
 //Генерація таблиці множення для конкретного числа: Напишіть програму, яка запитує в користувача число, а потім генерує таблицю множення для цього числа від 1 до 10.
-Console.WriteLine("Введіть число для генерації таблиці множення: ");
-int number = int.Parse(Console.ReadLine());
+//Console.WriteLine("Введіть число для генерації таблиці множення: ");
+//int number = int.Parse(Console.ReadLine());
 
-for (int i = 1; i <= 10; i++)
+//for (int i = 1; i <= 10; i++)
+//{
+//    Console.WriteLine($"{number} x {i} = {number * i}");
+//}
+
+//Перевірка на простоту: Напишіть програму, яка перевіряє, чи є задане користувачем число простим. Число вважається простим, якщо воно ділиться лише на 1 і на себе.
+Console.WriteLine("Введіть число:");
+int num = int.Parse(Console.ReadLine());
+
+bool isPrime;
+
+if (num <= 1)
 {
-    Console.WriteLine($"{number} x {i} = {number * i}");
+    Console.WriteLine("Число не є простим.");
+}
+else
+{
+    isPrime = true;
 }
