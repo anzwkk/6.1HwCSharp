@@ -64,31 +64,46 @@
 //}
 
 //Перевірка паролю: Напишіть програму, яка перевіряє пароль користувача. Пароль вважається прийнятним, якщо він містить принаймні 8 символів, з яких принаймні один символ - це цифра, а також принаймні один символ - це спеціальний символ (наприклад, !, @, # тощо).
-Console.WriteLine("Введіть пароль (має бути щонайменше 8 символів, хоча б одна цифра та один спеціальний символ):");
-string password = Console.ReadLine();
+//Console.WriteLine("Введіть пароль (має бути щонайменше 8 символів, хоча б одна цифра та один спеціальний символ):");
+//string password = Console.ReadLine();
 
-bool isValidLength = password.Length >= 8;
-bool containsNumber = false;
-bool containsSpecialCharacter = false;
-string specialCharacters = "!@#$%*&*)(,.?\"|<>";
+//bool isValidLength = password.Length >= 8;
+//bool containsNumber = false;
+//bool containsSpecialCharacter = false;
+//string specialCharacters = "!@#$%*&*)(,.?\"|<>";
 
-foreach (char character in password)
+//foreach (char character in password)
+//{
+//    if (specialCharacters.Contains(character))
+//    {
+//        containsSpecialCharacter = true;
+//    }
+//    else if (char.IsDigit(character))
+//    {
+//        containsNumber = true;
+//    }
+//}
+
+//if (isValidLength && containsNumber && containsSpecialCharacter)
+//{
+//    Console.WriteLine("Пароль вірний");
+//}
+//else
+//{
+//    Console.WriteLine("Пароль не відповідає вимогам");
+//}
+
+//Генерація фібоначчівської послідовності: Напишіть програму, яка генерує перші N чисел Фібоначчі. Послідовність Фібоначчі починається з 0 і 1, а кожне наступне число є сумою двох попередніх чисел у послідовності.
+Console.WriteLine("Введіть кількість чисел Фібоначчі:");
+int num = int.Parse(Console.ReadLine());
+if (num <= 0)
 {
-    if (specialCharacters.Contains(character))
-    {
-        containsSpecialCharacter = true;
-    }
-    else if (char.IsDigit(character))
-    {
-        containsNumber = true;
-    }
+    Console.WriteLine("Кількість чисел повинна бути більше 0");
+    return;
 }
 
-if (isValidLength && containsNumber && containsSpecialCharacter)
-{
-    Console.WriteLine("Пароль вірний");
-}
-else
-{
-    Console.WriteLine("Пароль не відповідає вимогам");
-}
+int first = 0;
+int second = 1;
+Console.WriteLine("Послідовність Фібоначчі:");
+
+
