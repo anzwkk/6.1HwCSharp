@@ -48,16 +48,16 @@ Console.WriteLine($"Прості числа від 1 до {maxNum}:");
 for (int num = 2; num <= maxNum; num++)
 {
     bool isPrime = true;
-    for (int i = 2; i <= num; i++)
+    for (int i = 2; i < num; i++)
     {
-        if (num % i != 0 && i != num) 
+        if (num % i == 0)
         {
             isPrime = false;
             break;
         }
     }
 
-    if (isPrime) 
+    if (isPrime)
     {
         Console.Write(num + " ");
     }
