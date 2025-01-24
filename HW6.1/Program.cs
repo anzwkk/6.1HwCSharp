@@ -106,4 +106,12 @@ int first = 0;
 int second = 1;
 Console.WriteLine("Послідовність Фібоначчі:");
 
+for (int i = 0; i < num; i++)
+{
+    Console.Write(first + " ");
+    int next = first + second;
+    first = second;
+    second = next;
+}
+
 
