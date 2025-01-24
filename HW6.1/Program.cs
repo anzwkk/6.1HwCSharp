@@ -115,15 +115,20 @@
 //}
 
 //Калькулятор оплати праці за годину: Напишіть програму, яка запитує в користувача кількість годин, працюваних за день, та розмір годинної ставки. Після введення значень програма має обчислити та вивести оплату за день.
-int hoursWorked;
-double hourRate;
-double dailyPay;
+//int hoursWorked;
+//double hourRate;
+//double dailyPay;
 
-Console.WriteLine("Введіть кількість годин, працюваних за день:");
-hoursWorked = int.Parse(Console.ReadLine());
+//Console.WriteLine("Введіть кількість годин, працюваних за день:");
+//hoursWorked = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Введіть розмір годинної ставки:");
-hourRate = double.Parse(Console.ReadLine());
+//Console.WriteLine("Введіть розмір годинної ставки:");
+//hourRate = double.Parse(Console.ReadLine());
 
-dailyPay = hoursWorked * hourRate;
-Console.WriteLine($"Оплата за день: {dailyPay} грн");
+//dailyPay = hoursWorked * hourRate;
+//Console.WriteLine($"Оплата за день: {dailyPay} грн");
+
+//Генерація таблиці множення для конкретного числа: Напишіть програму, яка запитує в користувача число, а потім генерує таблицю множення для цього числа від 1 до 10.
+Console.WriteLine("Введіть число для генерації таблиці множення:");
+int number = int.Parse(Console.ReadLine());
+
