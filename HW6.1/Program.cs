@@ -159,4 +159,8 @@ else
             break;
         }
     }
+    if (isPrime)
+        Console.WriteLine("Число просте");
+    else
+        Console.WriteLine("Число не є простим");
 }
